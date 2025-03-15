@@ -1,0 +1,433 @@
+/* General Styling */
+:root {
+    --main-blue-color: #00BBFF;
+    --main-text-color: #ffffff;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Lilita One", sans-serif;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+    background-color: var(--main-text-color);
+    border: 1px solid #e0e0e0;
+    border-radius: 40px;
+    padding: 5px 30px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .nav-link {
+    color: #000;
+    font-weight: 500;
+}
+
+header .btn-dark {
+    background-color: #000;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    color: var(--main-text-color);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-color: #f8f9fa;
+    background-image: url('/view-luxurious-hotel-interior-space\ 1.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--main-text-color);
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+.hero h1, .hero p, .hero button {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.hero .btn-primary {
+    background-color: var(--main-blue-color);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+/* Museums Section */
+.museum-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.museum-card:hover {
+    transform: translateY(-5px);
+}
+
+.museum-card-see-all-button .btn-primary {
+    background-color: var(--main-blue-color) !important;
+    border: none;
+    border-radius: 50px;
+    padding: 5px 30px;
+}
+
+.museum-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.museum-card-body {
+    padding: 16px;
+}
+
+.museum-card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.museum-card-text {
+    font-size: 1rem;
+    color: #555;
+    text-align: left;
+}
+
+/* Features Section */
+.feature-card {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    gap: 16px;
+    padding: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    background-color: transparent;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.feature-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.feature-card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.feature-card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: var(--main-text-color);
+    padding: 40px 0;
+}
+
+footer .list-unstyled li a {
+    color: #ccc;
+    text-decoration: none;
+}
+footer .list-unstyled li{
+    margin-bottom: 2rem;
+}
+
+footer a:hover {
+    color: var(--main-text-color);
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.about-hero {
+    background-image: url('/image 4.png');
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.about-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6 );
+}
+
+.about-hero h1 {
+    position: relative;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Vision & Mission Section */
+.vision-mission {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.vision-mission h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.vision-mission p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* What We Offer Section */
+.what-we-offer {
+    padding: 80px 20px;
+}
+
+.offer-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.offer-content img {
+    width: 40%;
+    border-radius: 16px;
+}
+
+.offer-text h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.offer-text p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 15px 0px;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    max-height: 260px;
+    overflow: hidden;
+    scroll-snap-align: start;
+}
+
+.testimonial-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.testimonial-card h4 {
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+}
+
+.testimonial-card .rating {
+    color: #ffc107;
+    margin-bottom: 10px;
+}
+
+.testimonial-content {
+    margin: 10px 0;
+}
+
+.testimonial-card p {
+    
+    text-align: left;
+    font-size: 1rem;
+    color: #555;
+}
+
+.input-grey-rounded{
+    font-size: 16px;
+    line-height: 1.5;
+    background: #E9EEF0;
+    border: 1px solid #D5D9DB;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'><path fill='%238C92A0' d='M11.44 10.73l4.41 4.42a.5.5 0 1 1-.7.7l-4.42-4.41a6.5 6.5 0 1 1 .7-.7v-.01zM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11z'></path></svg>");
+    background-repeat: no-repeat;
+    background-position: 15px 10px;
+    background-size: 20px 20px;
+    border-radius: 100px;
+    width: 100%;
+    padding: .5em 1em .5em 2.5em;
+} 
+    
+.input-grey-rounded::placeholder{
+    color: #838D99;
+}
+    
+.input-grey-rounded:focus {
+    outline: none;
+    background-color: #FFF;
+    border: 1px solid #84A2FA;
+}
+    
+
+/* Sign Up Page Styling */
+.signup-container {
+    width: 600px;
+    margin: 100px auto;
+    padding: 40px;
+    border: 1px solid #e0e0e0;
+    border-radius: 16px;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+    background-color: transparent;
+    text-align: center;
+}
+
+.signup-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.signup-input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 0px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.signup-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+}
+
+.signup-checkbox input {
+    width: 16px;
+    height: 16px;
+}
+
+.signup-btn {
+    background-color: #00BBFF;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #009fcc;
+}
+
+.signin-link {
+    margin-top: 16px;
+    font-size: 0.9rem;
+}
+
+.signin-link {
+    color: #00BBFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signin-link:hover {
+    text-decoration: none;
+}
